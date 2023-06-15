@@ -4,7 +4,7 @@ import time
 from datetime import datetime
 import pandas as pd
 import numpy as np
-import yfinance as yf
+#import yfinance as yf
 import pytz
 import ccxt.binance
 import plotly.graph_objects as go

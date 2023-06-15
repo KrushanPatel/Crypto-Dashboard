@@ -13,6 +13,7 @@ st.set_page_config(
                     page_icon="🧊",
                     layout="wide",
                     )
+
 #current_time  =  datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
 current_time = datetime.now(pytz.timezone("America/New_York")).strftime("%Y-%m-%d %H:%M:%S")
 

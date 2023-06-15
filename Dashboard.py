@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 #import yfinance as yf
 import pytz
-import ccxt.binance
+import ccxt
 import plotly.graph_objects as go
 st.set_page_config(
                     page_title="Live Stock Chart",

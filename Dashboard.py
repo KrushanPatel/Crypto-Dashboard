@@ -7,6 +7,9 @@ import numpy as np
 #import yfinance as yf
 import pytz
 import ccxt
+import mplfinance
+import sklearn
+
 import plotly.graph_objects as go
 st.set_page_config(
                     page_title="Live Stock Chart",
@@ -19,7 +22,7 @@ current_time = datetime.now(pytz.timezone("America/New_York")).strftime("%Y-%m-%
 
 st.title("Real Time Crypto Currency Dashboard")
 st.subheader(f"Current Time:{current_time}/Timezone:America/New_York")
-
+"""
 def binance():
     client = ccxt.binanceusdm({
                                 "apiKey": "xBPLNbrLuBqVmYriXB2lVFWa7XEPfUIOyo1Sjvft21SmfZMRUxDz2BcXNFGXGxOw",
@@ -74,4 +77,8 @@ while True:
 
         st.plotly_chart(fig,use_container_width=True)
         st.write(data)
+
+"""
+
+
 

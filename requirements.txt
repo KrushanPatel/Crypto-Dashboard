@@ -4,4 +4,4 @@ ccxt
 numpy
 pytz
 plotly
-
+mplfinance

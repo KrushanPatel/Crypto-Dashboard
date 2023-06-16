@@ -22,6 +22,25 @@ current_time = datetime.now(pytz.timezone("America/New_York")).strftime("%Y-%m-%
 
 st.title("Real Time Crypto Currency Dashboard")
 st.subheader(f"Current Time:{current_time}/Timezone:America/New_York")
+
+
+symbol = ["AAPL","MSFT","TSLA","ADBE","META","UBER"]
+interval = ["1m","5m","15m","1h","4h","1d","1w"]
+period = ["1d","1w","1mo","6mo","1y","5y"]
+
+placeholder = st.empty
+
+def get_data(symbol):
+    
+    
+    symbol = st.sidebar.selectbox("SYMBOL",symbol)
+    interval = st.sidebar.selectbox("INTERVAL",symbol)
+    period = st.sidebar.selectbox("PERIOD",symbol)
+    
+    data = yf.download(symbol,interval,period)
+    data = pd.DataFrame(data)
+    st.write(data)
+
 """
 def binance():
     client = ccxt.binanceusdm({

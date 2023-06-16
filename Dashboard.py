@@ -8,9 +8,8 @@ import numpy as np
 import pytz
 import ccxt
 import mplfinance
-
-
 import plotly.graph_objects as go
+
 st.set_page_config(
                     page_title="Live Stock Chart",
                     page_icon="🧊",
@@ -23,6 +22,7 @@ current_time = datetime.now(pytz.timezone("America/New_York")).strftime("%Y-%m-%
 st.title("Real Time Crypto Currency Dashboard")
 st.subheader(f"Current Time:{current_time}/Timezone:America/New_York")
 
+global symbol, interval, period
 
 symbol = ["AAPL","MSFT","TSLA","ADBE","META","UBER"]
 interval = ["1m","5m","15m","1h","4h","1d","1w"]
@@ -31,8 +31,7 @@ period = ["1d","1w","1mo","6mo","1y","5y"]
 placeholder = st.empty
 
 def get_data():
-    
-    
+  
     symbol = st.sidebar.selectbox("SYMBOL",symbol)
     interval = st.sidebar.selectbox("INTERVAL",symbol)
     period = st.sidebar.selectbox("PERIOD",symbol)

@@ -30,7 +30,7 @@ period = ["1d","1w","1mo","6mo","1y","5y"]
 
 placeholder = st.empty
 
-def get_data(symbol):
+def get_data():
     
     
     symbol = st.sidebar.selectbox("SYMBOL",symbol)
@@ -41,6 +41,7 @@ def get_data(symbol):
     data = pd.DataFrame(data)
     st.write(data)
 
+get_data()
 """
 def binance():
     client = ccxt.binanceusdm({

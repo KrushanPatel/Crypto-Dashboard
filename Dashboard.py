@@ -33,8 +33,8 @@ placeholder = st.empty
 def get_data():
     global symbol, interval, period
     symbol = st.sidebar.selectbox("SYMBOL",symbol)
-    interval = st.sidebar.selectbox("INTERVAL",symbol)
-    period = st.sidebar.selectbox("PERIOD",symbol)
+    interval = st.sidebar.selectbox("INTERVAL",interval)
+    period = st.sidebar.selectbox("PERIOD",period)
     
     data = yf.download(symbol,interval,period)
     data = pd.DataFrame(data)

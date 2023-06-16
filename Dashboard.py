@@ -8,7 +8,7 @@ import numpy as np
 import pytz
 import ccxt
 import mplfinance
-import sklearn
+
 
 import plotly.graph_objects as go
 st.set_page_config(

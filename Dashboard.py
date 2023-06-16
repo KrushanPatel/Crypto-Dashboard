@@ -9,6 +9,7 @@ import pytz
 import ccxt
 import mplfinance
 import plotly.graph_objects as go
+import yfinance as yf 
 
 st.set_page_config(
                     page_title="Live Stock Chart",
